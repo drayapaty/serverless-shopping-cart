@@ -8,7 +8,7 @@ provider:
   runtime: nodejs12.x
   region: eu-west-1
   stage: ${opt:stage, "dev"}
-  profile: serverless-admin-dev
+#  profile: your-aws-profile
   deploymentBucket:
     name: ${self:service}-${self:provider.stage}.${self:provider.region}.deploys
   logRetentionInDays: 14
