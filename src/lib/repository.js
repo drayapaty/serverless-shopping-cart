@@ -88,8 +88,6 @@ const updateCart = async (cart) => {
     ReturnValues: "ALL_NEW",
   };
 
-
-  console.log(params)
   const { Attributes: updatedCart } = await docClient.update(params).promise();
 
   return updatedCart;
